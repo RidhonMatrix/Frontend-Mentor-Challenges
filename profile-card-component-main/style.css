@@ -115,14 +115,14 @@ section {
 }
 
 .circles .c1 {
-  top: -350px;
-  left: 180px;
+  top: -300px;
+  left: 100px;
   transform: translate(-100px, -50px);
 }
 
 .circles .c2 {
-  bottom: -350px;
-  right: 180px;
+  bottom: -300px;
+  right: 100px;
   transform: translate(100px, 50px);
 }
 
