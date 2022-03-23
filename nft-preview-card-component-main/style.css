@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  /* min-height: 100vh; */
+  background-color: var(--main-bg);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 1.25rem;
+}
+.container {
+  margin: auto;
+  background-color: var(--card-bg);
+  width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+}
+.top-img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.middle h2 {
+  color: var(--White);
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+p {
+  color: hsl(0, 0%, 100%, 60%);
+  font-weight: 400;
+}
+.middle ul li {
+  display: flex;
+  align-items: center;
+}
+.middle ul li img {
+  margin-right: 0.5rem;
+}
+.middle ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding: 2rem 0;
+}
+.middle ul li:first-child {
+  color: var(--cyan);
+}
+.middle ul li:last-child {
+  color: var(--cyan);
+}
+
+p {
+  font-weight: 300;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 1rem;
+}
+
+.footer img {
+  width: 3.5rem;
+  border: 2px solid var(--White);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.footer span {
+  color: var(--White);
+  font-weight: 400;
+}
+.footer span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+.middle h2:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.container .main-image {
+  position: relative;
+}
+
+.container .main-image div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.container .main-image div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.container .main-image div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
