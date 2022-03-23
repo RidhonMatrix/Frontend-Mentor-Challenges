@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #e0e8ff;
+  font-family: "Red Hat", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 350px;
+  background: #f5f7ff;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.container .header-img img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.middle {
+  padding: 20px;
+}
+
+.middle h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1f2f56;
+}
+
+.middle p {
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.middle .music-cost {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.middle .music-cost h4 {
+  color: #1f2f56;
+}
+
+.middle .music-cost .annual {
+  padding-right: 30px;
+  padding-left: 0px;
+  margin-left: -30px;
+}
+
+.middle .music-cost img {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.middle .music-cost a {
+  color: #3829e0;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.middle .music-cost a:hover {
+  color: #7280a7;
+  text-decoration: none;
+}
+
+.middle .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 5px;
+}
+
+.middle .buttons .payment {
+  background-color: #3829e0;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 16px 32px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 10px;
+  font-weight: 1px;
+  margin-bottom: 15px;
+}
+
+.middle .buttons .payment:hover {
+  background-color: #7280a7;
+  color: white;
+}
+
+.middle .buttons .cancel {
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  opacity: 0.6;
+}
+
+.middle .buttons .cancel:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

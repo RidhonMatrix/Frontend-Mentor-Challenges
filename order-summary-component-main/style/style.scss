@@ -1,0 +1,111 @@
+$pale-blue: hsl(225, 100%, 94%);
+$right-blue: hsl(245, 75%, 52%);
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: $pale-blue;
+  font-family: "Red Hat", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  // margin: auto;
+  width: 350px;
+  background: $very-pale-blue;
+  border-radius: 15px 15px 0px 0px;
+  .header-img img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+  }
+}
+.middle {
+  padding: 20px;
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $dark-blue;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+    opacity: 0.6;
+  }
+  .music-cost {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    h4 {
+      color: $dark-blue;
+    }
+    .annual {
+      padding-right: 30px;
+      padding-left: 0px;
+      margin-left: -30px;
+      // border: 1px solid black;
+    }
+    img {
+      // border: 1px solid black;
+      padding-right: 0px;
+      margin-right: 0px;
+    }
+    a {
+      color: $right-blue;
+      font-weight: 600;
+      font-size: 15px;
+      &:hover {
+        color: $desaturated-blue;
+        text-decoration: none;
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    .payment {
+      background-color: $right-blue;
+      border: none;
+      color: white;
+      text-align: center;
+      padding: 16px 32px;
+      text-decoration: none;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 700;
+      border-radius: 10px;
+      font-weight: 1px;
+      margin-bottom: 15px;
+      &:hover {
+        background-color: $desaturated-blue;
+        color: white;
+      }
+    }
+    .cancel {
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
